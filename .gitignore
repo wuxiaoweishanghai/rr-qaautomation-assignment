@@ -5,3 +5,4 @@ __pycache__/
 *.venv/
 allure-results/
 screenshots/
+.DS_Store
