@@ -21,6 +21,6 @@ if __name__ == "__main__":
     # Run pytest
     exit_code = pytest.main([
         "--alluredir", result_dir,
-        "TestCase"  # Or your test path
+        "testcase"  # Or your test path
     ])
     exit(exit_code)
