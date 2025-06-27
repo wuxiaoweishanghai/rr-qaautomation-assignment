@@ -73,7 +73,6 @@ def pytest_runtest_makereport(item, call):
 
 @pytest.hookimpl(tryfirst=True)
 def pytest_sessionstart(session):
-    config = session.config
 
     env_info = {
         "env": "testing",
