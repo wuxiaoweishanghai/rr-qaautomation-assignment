@@ -11,8 +11,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # # Set env vars to pass to conftest.py
-    # os.environ["BUILD_NAME"] = args.build_name
-    # os.environ["BUILD_URL"] = args.build_url
+    os.environ["BUILD_NAME"] = args.build_name
+    os.environ["BUILD_URL"] = args.build_url
 
     # Allure result directory
     result_dir = os.path.abspath("./allure-results")

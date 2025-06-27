@@ -88,14 +88,14 @@ def pytest_sessionstart(session):
         for key, value in env_info.items():
             f.write(f"{key}={value}\n")
 
-    build_name = config.getoption("--build-name")
-    build_url = config.getoption("--build-url")
+    build_name = os.getenv("BUILD_NAME")
+    build_url = os.getenv("BUILD_URL")
 
     executor_info = {
         "name": "Automation Run",
         "type": "Automation",
         "reportName": "Local Allure Report",
-        "url": "https://tmdb-discover.surge.sh/popular",
+        "url": "https://tmdb-discover.surge.sh/",
         "buildName": build_name,
         "buildUrl": build_url,
     }
