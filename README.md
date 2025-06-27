@@ -17,7 +17,7 @@ brew install allure
 
 Running Tests
 
-python run_tests.py --build-name="Jenkins_1234" --build-url="http://jenkins/job/1234"
+python startup.py --build-name="Jenkins_1234" --build-url="http://jenkins/job/1234"
 Generating Allure Reports
 allure serve ./allure-results
 
